@@ -3,111 +3,123 @@
 <html lang="en">
 
 <!-- Head Part -->
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Book Now | VR Park</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Now | VR Park</title>
+</head>
 
-  <!-- Body Part -->
-  <body>
-    
-    <!-- Logo area -->
+<!-- Body Part -->
+<body>
+
+  <!-- Logo area -->
+  <header>
+    <h1>VR Park</h1>
+    <img src="images/wide/immerse-yourself/logo-color.png" alt="Logo VR Park" />
+  </header>
+
+  <!-- Navigation Tabs -->
+  <nav aria-label="Primary navigation">
+    <ul>
+      <li><a href="index.html">Immerse Yourself</a></li>
+      <li><a href="your-journey.html">Your Journey</a></li>
+      <li>Book Now (current)</li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- The Booking area -->
     <header>
-      <h1>VR Park</h1>
-      <img
-        src="images/wide/immerse-yourself/logo-color.png"
-        alt="Logo VR Park" />
+      <h2>Book Now</h2>
+      <img src="./images/wide/book-now/book-now.png" alt="Book now image" width="30%" height="30%" />
     </header>
 
-    <!-- Navigation Tabs -->
-    <nav aria-label="Primary navigation">
-      <ul>
-        <li><a href="Immerse-Yourself.html">Immerse Yourself</a></li>
-        <li><a href="your-journey.html">Your Journey</a></li>
-        <li>Book Now <span>(current)</span></li>
-      </ul>
-    </nav>
+    <!-- The Booking form -->
+    <form action="/" method="get">
 
-    <!-- Main Content -->
-    <main>
+      <!-- Reservation area -->
+      <fieldset>
+        <legend>Reservation:</legend>
+        <div>
+          <label for="Date">Date</label>
+          <input type="date" id="Date" name="checkin" required>
+        </div>
 
-    <!-- The Booking Form -->
-    <header>
-     <h2>Book Now</h2>
-     <img
-       src="./images/wide/book-now/book-now.png"
-       alt="Background"/>
-     </header>
+        <div>
+          <label for="room-selection">Select Room Preference</label>
+          <select id="room-selection" name="room_preference" required>
+            <option value="">Choose a Room from the List</option>
+            <option value="Common Room">Common Room: $20/ per hour</option>
+            <option value="Private Room">Private Room: $80/ per hour</option>
+            <option value="Day Pass-Common Room">Day Pass-Common Room: $200/ per guest</option>
+            <option value="Day Pass-Private Room">Day Pass-Private Room: $400/ per guest</option>
+          </select>
+          <img src="./images/wide/book-now/availability-yes.png" alt="Yes logo" width="50" height="50" />
+          <img src="./images/wide/book-now/availability-no.png" alt="No logo" width="50" height="50" />
+        </div>
+      </fieldset>
 
-    <div>
-     <label for="name">Name</label>
-     <input type="text" id="name" name="visitor_name" placeholder="Jack Webber" pattern=[A-Z\sa-z]{3,20} required>
-    </div>
+      <!-- Contact info area  -->
+      <fieldset>
+        <legend>Contact Info:</legend>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="visitor_name" placeholder="Jack Webber" pattern=[A-Z\sa-z]{3,20} required>
+        </div>
 
-    <div>
-     <label for="email">E-mail</label>
-     <input type="email" id="email" name="visitor_email" placeholder="jack.w@email.com" required>
-    </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="visitor_email" placeholder="jack.w@email.com" required>
+        </div>
 
-    <div>
-     <label for="phone">Phone Number</label>
-     <input type="tel" id="phone" name="visitor_phone" placeholder="000-000-0000" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
-    </div>
+        <div>
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="visitor_phone" placeholder="000-000-0000"
+            pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+        </div>
 
-    <div>
-     <label for="Guests">Guests</label>
-     <input type="number" id="Guests" name="total_adults" placeholder="0" min="1" required>
-    </div>
+        <div>
+          <label for="Guests">Guests</label>
+          <input type="number" id="Guests" name="total_adults" placeholder="0" min="1" required>
+        </div>
 
+        <div>
+          <label for="message">Anything Else?</label>
+          <textarea id="message" name="Guest_message" placeholder="Tell us anything else that might be important."
+            required></textarea>
+        </div>
+      </fieldset>
 
-    <div>
-     <label for="Date">Date</label>
-     <input type="date" id="Date" name="checkin" required>
-    </div>
+      <!-- Book/Cancel buttons -->
+      <button type="submit">Book</button>
+      <button type="submit">Cancel</button>
 
-    <div>
-     <label for="room-selection">Select Room Preference</label>
-     <select id="room-selection" name="room_preference" required>
-        <option value="">Choose a Room from the List</option>
-        <option value="Common Room">Common Room: $20/ per hour</option>
-        <option value="Private Room">Private Room: $80/ per hour</option>
-        <option value="Day Pass-Common Room">Day Pass-Common Room: $200/ per guest</option>
-        <option value="Day Pass-Private Room">Day Pass-Private Room: $400/ per guest</option>
-     </select>
-    </div>
+    </form>
 
-    <div>
-     <label for="message">Anything Else?</label>
-     <textarea id="message" name="Guest_message" placeholder="Tell us anything else that might be important." required></textarea>
-    </div>
+  </main>  
 
-    <div>
-     <button type="submit">Check out</button>
-     <img
-       src="./images/wide/book-now/availability-yes.png"
-       alt="Yes logo"/>
-    </div>
+  <!-- Footer -->
+  <footer>
 
-    <div>
-     <button type="submit">Cancel</button>
-     <img
-       src="./images/wide/book-now/availability-no.png"
-       alt="No logo"/>
-    </div>
-</main>
+    <!-- Contact info -->
+    <address>
+      <h4>Contact</h2>
+        <p>
+          Email: Wdg7g0@VRmail.com
+        </p>
+        <p>
+          Phone Number: 111-111-1111
+        </p>
+        <p>
+          Location: VR Theme Park-Uol-Goldsmiths
+        </p>
+    </address>
 
-    <!-- Footer -->
-    <h2>Contact</h2>
-    <p>
-      Email: Wdg7g0@VRmail.com
-    </p>
-    <p>
-      Phone Number: 111-111-1111
-    </p>
-    <p>
-      Location: VR Theme Park-Uol-Goldsmiths
-    </p>
-    <footer>Copyright notice</footer>
-  </body>
+    <!-- Rights -->
+    <p>All rights reserved to Wdg7g0</p>
+  </footer>
+</body>
+
 </html>
