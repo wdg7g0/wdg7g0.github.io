@@ -7,8 +7,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #483D8B;
 }
 
+#logo {
+  width: 200px;
+  height: 200px;
+}
+
 nav li {
   list-style-type: none; /* remove bullets */
+  display: inline; 
 }
 
 .mainNav {
