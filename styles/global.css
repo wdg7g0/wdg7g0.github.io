@@ -12,7 +12,6 @@ nav li {
 }
 
 .mainNav {
-  font-family: 'DejaVu Sans';
   font-weight: bold;
   text-decoration: none; /* remove link underline */
   font-size: 4rem;
