@@ -1,11 +1,16 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-  background-color: #322F36;
+  background-color: #322f36;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #483D8B;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #483d8b;
 }
 
 #logo {
@@ -19,7 +24,7 @@ nav li {
   margin: 20px 20px;
 }
 
-nav { 
+nav {
   grid-area: nav;
 }
 
@@ -27,11 +32,11 @@ nav {
   font-weight: bold;
   text-decoration: none; /* remove link underline */
   font-size: 1.3rem;
-  color: rgba(255,255,255,0.55);
+  color: rgba(255, 255, 255, 0.55);
 }
 
 .mainNavSelected {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 header h1 {
@@ -50,6 +55,6 @@ footer {
 footer h4 {
   color: white;
 }
-footer address{
-font-style: normal;   
+footer address {
+  font-style: normal;
 }
