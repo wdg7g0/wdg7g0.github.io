@@ -1,3 +1,7 @@
+:root {
+  --navbar-height: 60px;
+}
+
 html, body {
   padding: 0;
   margin: 0;
@@ -18,35 +22,66 @@ h6 {
   color: #483d8b;
 }
 
-#logo {
-  width: 200px;
-  height: 200px;
-}
-
-nav li {
-  list-style-type: none; /* remove bullets */
-  display: inline;
-  margin: 20px 20px;
-}
-
-nav {
-  grid-area: nav;
-}
-
-.mainNav {
+/* .mainNav {
   font-weight: bold;
-  text-decoration: none; /* remove link underline */
+  text-decoration: none;
   font-size: 1.3rem;
   color: rgba(255, 255, 255, 0.55);
 }
 
 .mainNavSelected {
   color: #ffffff;
-}
+} */
 
 header h1 {
   color: #191970;
   font-weight: bold;
+}
+
+/* Navbar */
+nav#navbar {
+  width: 100%;
+  background-color: #252426;
+}
+
+nav#navbar .container {
+  height: var(--navbar-height);
+  display: flex;
+  flex-direction: row;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav#navbar .logo {
+  height: var(--navbar-height);
+  width: var(--navbar-height);
+}
+
+nav#navbar ul {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+
+  padding-left: 64px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  list-style-type: none;
+}
+
+nav#navbar ul > * + * {
+  margin-left: 32px;
+}
+
+nav#navbar ul > li > a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+nav#navbar ul > li.selected > a {
+  color: #ffffff;
 }
 
 /* Footer */
