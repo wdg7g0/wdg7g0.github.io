@@ -39,9 +39,6 @@ nav#navbar .container {
   height: var(--navbar-height);
   display: flex;
   flex-direction: row;
-  
-  margin-left: auto;
-  margin-right: auto;
 }
 
 nav#navbar .logo {
@@ -83,8 +80,6 @@ footer {
 }
 
 footer .container {
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -104,6 +99,8 @@ footer address {
 /* Utility */
 .container {
   width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sr-only {
