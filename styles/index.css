@@ -5,8 +5,7 @@
   grid-template-areas:
     'logo nav nav nav nav nav'
     'carousel carousel carousel carousel carousel carousel'
-    'main main main main main main'
-    'footer footer footer footer footer footer';
+    'main main main main main main';
   width: 960px;
   margin: auto;
 }

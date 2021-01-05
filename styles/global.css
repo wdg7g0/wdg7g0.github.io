@@ -52,7 +52,6 @@ header h1 {
 footer {
   color: white;
   background-color: #252426;
-  grid-area: footer;
   margin-top: 64px;
   padding-left: 64px;
 }
