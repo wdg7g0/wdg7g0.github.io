@@ -1,7 +1,7 @@
 /* Grid */
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 35% [col-start] 450px [col-middle] 35% [col-end]);
+    grid-template-columns: repeat(auto-fill, 25% [col-start] 450px [col-middle] 35% [col-end]);
     gap: 20px;
     grid-auto-rows: minmax(150px, auto);
   }
