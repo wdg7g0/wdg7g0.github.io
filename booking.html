@@ -1,6 +1,7 @@
 <!-- Created by See Ying Yeung -->
 <!-- Content provided by Mohammed Zayed -->
 <!-- Images provided by Margarita Smoliakova -->
+<!-- Code updated by Margarita Smoliakova -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,15 +17,12 @@
 <!-- Body Part -->
 <body>
 
- <!-- Navigation Bar -->
- <nav id="navbar" aria-label="Primary navigation">
-  <div class="container">
+  <!-- Navigation Bar -->
+  <nav id="navbar" aria-label="Primary navigation">
+    <div class="container">
+
     <!-- Logo -->
-    <img
-      class="logo"
-      src="images/wide/immerse-yourself/logo-color.png"
-      alt="Logo VR Park"
-    />
+    <img class="logo" src="images/wide/immerse-yourself/logo-color.png" alt="Logo VR Park" />
     <ul>
       <li><a href="index.html">Immerse Yourself</a></li>
       <li>
@@ -32,90 +30,89 @@
       </li>
       <li class="selected"><a>Book Now</a></li>
     </ul>
-  </div>
-</nav>
+    </div>
+  </nav>
 
   <!-- Main Content -->
-  <main>
+  <main class="container">
 
-    <!-- The Booking form -->    
+    <!-- The Booking form -->
     <form method="get">
-
       <div class="wrapper">
 
         <div class="book-now-image">
           <img id="book-now-image" src="./images/wide/book-now/book-now.png" alt="Book now image" />
         </div>
-      
-      <!-- Reservation area -->
-      <div class="reservation">
-      <fieldset>
-        <legend><b>Reservation</b></legend>
-        <div>
-          <label for="Date">Date</label>
-          <input type="date" id="Date" name="checkin" required>
+
+        <!-- Reservation area -->
+        <div class="reservation">
+          <fieldset>
+            <legend><b>Reservation</b></legend>
+            <div>
+              <label for="Date">Date</label>
+              <input type="date" id="Date" name="checkin" required>
+            </div>
+
+            <div>
+              <label for="room-selection">Select Room Preference</label>
+              <select id="room-selection" name="room_preference" required>
+                <option value="">Choose a Room from the List</option>
+                <option value="Common Room">Common Room: $20/ per hour</option>
+                <option value="Private Room">Private Room: $80/ per hour</option>
+                <option value="Day Pass-Common Room">Day Pass-Common Room: $200/ per guest</option>
+                <option value="Day Pass-Private Room">Day Pass-Private Room: $400/ per guest</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <hr>
+
         </div>
 
-        <div>
-          <label for="room-selection">Select Room Preference</label>
-          <select id="room-selection" name="room_preference" required>
-            <option value="">Choose a Room from the List</option>
-            <option value="Common Room">Common Room: $20/ per hour</option>
-            <option value="Private Room">Private Room: $80/ per hour</option>
-            <option value="Day Pass-Common Room">Day Pass-Common Room: $200/ per guest</option>
-            <option value="Day Pass-Private Room">Day Pass-Private Room: $400/ per guest</option>
-          </select>
-        </div>
-      </fieldset>
+        <!-- Contact info area  -->
+        <div class="contactInfo">
+          <fieldset>
+            <legend><b>Contact Info</b></legend>
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="visitor_name" placeholder="Jack Webber" pattern=[A-Z\sa-z]{3,20}
+                required>
+            </div>
 
-      <hr>
+            <div>
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="visitor_email" placeholder="jack.w@email.com" required>
+            </div>
 
-    </div>
+            <div>
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="visitor_phone" placeholder="000-000-0000"
+                pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+            </div>
 
-    <!-- Contact info area  -->
-      <div class="contactInfo">
-      <fieldset>
-        <legend><b>Contact Info</b></legend>
-        <div>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="visitor_name" placeholder="Jack Webber" pattern=[A-Z\sa-z]{3,20} required>
-        </div>
+            <div>
+              <label for="Guests">Guests</label>
+              <input type="number" id="Guests" name="total_adults" placeholder="0" min="1" required>
+            </div>
 
-        <div>
-          <label for="email">E-mail</label>
-          <input type="email" id="email" name="visitor_email" placeholder="jack.w@email.com" required>
-        </div>
-
-        <div>
-          <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="visitor_phone" placeholder="000-000-0000"
-            pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+            <div>
+              <label for="message">Anything Else?</label>
+              <textarea id="message" name="Guest_message" placeholder="Tell us anything else that might be important."
+                required></textarea>
+            </div>
+          </fieldset>
         </div>
 
-        <div>
-          <label for="Guests">Guests</label>
-          <input type="number" id="Guests" name="total_adults" placeholder="0" min="1" required>
+        <!-- Book/Cancel buttons -->
+        <div class="submit-buttons">
+          <button class="button cancel-button" type="submit">Cancel</button>
+          <button class="button book-button" type="submit">Book</button>
         </div>
 
-        <div>
-          <label for="message">Anything Else?</label>
-          <textarea id="message" name="Guest_message" placeholder="Tell us anything else that might be important."
-            required></textarea>
-        </div>
-      </fieldset>
-    </div>
-
-      <!-- Book/Cancel buttons -->
-      <div class="submit-buttons">      
-      <button class="button cancel-button" type="submit">Cancel</button>
-      <button class="button book-button" type="submit">Book</button>
-    </div>
-
-  </div>
-
+      </div>
     </form>
-     
-  </main>  
+
+  </main>
 
   <!-- Footer -->
   <footer>

@@ -1,6 +1,7 @@
 <!-- Created by Aleph Retamal -->
 <!-- Content provided by Mohammed Zayed -->
 <!-- Images provided by Margarita Smoliakova -->
+<!-- Code updated by Benjamin Creze -->
 <!DOCTYPE html>
 <html lang="en">
   <!-- Head Part -->
@@ -38,140 +39,46 @@
     <!-- Main Content -->
     <main>
       <div class="container">
+        
         <!-- Images gallery section -->
-        <section id="carousel" aria-label="Images gallery">
-          <div id="carousel-container">
-            <ol>
-              <li id="carousel_1">
-                <div class="carousel-navigation">
-                  <a href="#carousel_7">
-                    <img src="./vectors/left-arrow.svg" alt="Previous image" />
-                  </a>
-                </div>
-                <div class="carousel-image-container">
-                  <img
-                    src="./images/wide/immerse-yourself/main-1.jpeg"
-                    alt="A futurist image"
-                  />
-                </div>
-                <div class="carousel-navigation">
-                  <a href="#carousel_2">
-                    <img src="./vectors/right-arrow.svg" alt="Next image" />
-                  </a>
-                </div>
-              </li>
-              <li id="carousel_2">
-                <div class="carousel-navigation">
-                  <a href="#carousel_1">
-                    <img src="./vectors/left-arrow.svg" alt="Previous image" />
-                  </a>
-                </div>
-                <div class="carousel-image-container">
-                  <img
-                    src="./images/wide/immerse-yourself/main-2.jpeg"
-                    alt="A second futurist image"
-                  />
-                </div>
-                <div class="carousel-navigation">
-                  <a href="#carousel_3">
-                    <img src="./vectors/right-arrow.svg" alt="Next image" />
-                  </a>
-                </div>
-              </li>
-              <li id="carousel_3">
-                <div class="carousel-navigation">
-                  <a href="#carousel_2">
-                    <img src="./vectors/left-arrow.svg" alt="Previous image"
-                  /></a>
-                </div>
-                <div class="carousel-image-container">
-                  <img
-                    src="./images/wide/immerse-yourself/main-3.jpeg"
-                    alt="Sea diving simulation"
-                  />
-                </div>
-                <div class="carousel-navigation">
-                  <a href="#carousel_4">
-                    <img src="./vectors/right-arrow.svg" alt="Next image" />
-                  </a>
-                </div>
-              </li>
-              <li id="carousel_4">
-                <div class="carousel-navigation">
-                  <a href="#carousel_3">
-                    <img src="./vectors/left-arrow.svg" alt="Previous image"
-                  /></a>
-                </div>
-                <div class="carousel-image-container">
-                  <img
-                    src="./images/wide/immerse-yourself/main-4.jpeg"
-                    alt="Hiking simulation"
-                  />
-                </div>
-                <div class="carousel-navigation">
-                  <a href="#carousel_5">
-                    <img src="./vectors/right-arrow.svg" alt="Next image" />
-                  </a>
-                </div>
-              </li>
-              <li id="carousel_5">
-                <div class="carousel-navigation">
-                  <a href="#carousel_4">
-                    <img src="./vectors/left-arrow.svg" alt="Previous image"
-                  /></a>
-                </div>
-                <div class="carousel-image-container">
-                  <img
-                    src="./images/wide/immerse-yourself/main-5.jpeg"
-                    alt="Racing car simulation"
-                  />
-                </div>
-                <div class="carousel-navigation">
-                  <a href="#carousel_6">
-                    <img src="./vectors/right-arrow.svg" alt="Next image" />
-                  </a>
-                </div>
-              </li>
-              <li id="carousel_6">
-                <div class="carousel-navigation">
-                  <a href="#carousel_5">
-                    <img src="./vectors/left-arrow.svg" alt="Previous image" />
-                  </a>
-                </div>
-                <div class="carousel-image-container">
-                  <img
-                    src="./images/wide/immerse-yourself/main-6.jpeg"
-                    alt="Shooting simulation"
-                  />
-                </div>
-                <div class="carousel-navigation">
-                  <a href="#carousel_7">
-                    <img src="./vectors/right-arrow.svg" alt="Next image" />
-                  </a>
-                </div>
-              </li>
-              <li id="carousel_7">
-                <div class="carousel-navigation">
-                  <a href="#carousel_6">
-                    <img src="./vectors/left-arrow.svg" alt="Previous image" />
-                  </a>
-                </div>
-                <div class="carousel-image-container">
-                  <img
-                    src="./images/wide/immerse-yourself/main-7.jpeg"
-                    alt="Team shooting simulation"
-                  />
-                </div>
-                <div class="carousel-navigation">
-                  <a href="#carousel_1">
-                    <img src="./vectors/right-arrow.svg" alt="Next image" />
-                  </a>
-                </div>
-              </li>
-            </ol>
+        <div class="slideshow-container">
+
+          <div class="slides fade">
+            <img class="slide-image" src="./images/wide/immerse-yourself/main-1.jpeg"/>
+          </div>          
+          <div class="slides fade">
+            <img class="slide-image" src="./images/wide/immerse-yourself/main-2.jpeg" />
+          </div>          
+          <div class="slides fade">
+            <img class="slide-image" src="./images/wide/immerse-yourself/main-3.jpeg" />
+          </div>          
+          <div class="slides fade">
+            <img class="slide-image" src="./images/wide/immerse-yourself/main-4.jpeg" />
+          </div>          
+          <div class="slides fade">
+            <img class="slide-image" src="./images/wide/immerse-yourself/main-5.jpeg" />
+          </div>          
+          <div class="slides fade">
+            <img class="slide-image" src="./images/wide/immerse-yourself/main-6.jpeg" />
+          </div>          
+          <div class="slides fade">
+            <img class="slide-image" src="./images/wide/immerse-yourself/main-7.jpeg" />
           </div>
-        </section>
-        <div class="main-group">
+          
+        </div>
+          <br/>
+        
+        <div class="dots">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span>
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+       <div class="main-group">
           <!-- VR common rooms section -->
           <div
             class="main-section"
@@ -237,8 +144,7 @@
               <li>VR accessories</li>
             </ul>
           </div>
-          <div class="main-section">
-            <img
+          <div class="main-section"><img
               src="./images/wide/immerse-yourself/shops-background.jpeg"
               alt="VR shop background image"
             />
@@ -246,9 +152,11 @@
         </div>
       </div>
     </main>
+
     <!-- Footer -->
     <footer>
       <div class="container">
+
         <!-- Contact info -->
         <address>
           <p><strong>Email</strong> Wdg7g0@VRmail.com</p>
@@ -258,7 +166,38 @@
 
         <!-- Rights -->
         <p>All rights reserved to Wdg7g0</p>
+
       </div>
     </footer>
+
+<script>
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("slides");
+    var dots = document.getElementsByClassName("dot");
+
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+
+    slideIndex++;
+
+    if (slideIndex > slides.length) {
+      slideIndex = 1
+    }  
+
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+
+    setTimeout(showSlides, 3000);
+  }
+  </script>
   </body>
 </html>
