@@ -6,45 +6,6 @@ width: 1440px;
 display: inline;
 }
 
-
-nav{
-font-size: 40px;
-display: flex;
-height: 60px;
-padding-left: 208px;
-padding-right: 208px;
-}
-
-#logo {
-width: 70px;
-height: 70px;
-}
-
-nav li {
-list-style-type: none; /* remove bullets */
-display: inline;
-position: relative;
-bottom: 27px;
-padding: 20px;
-height: 60px;
-}
-
-/* main nav button not selected */
-.mainNav { 
-display: inline;
-font-weight: ;
-text-decoration: none; /* remove link underline */
-font-size: 36px;
-color: rgba(255,255,255,0.55);
-height: 60px;
-}
-
-/* main nav button selected */
-.mainNavSelected {
-color: #FFFFFF;
-height: 60px;
-}
-
 section{
 text-align: center;
 font-weight: bold;
@@ -54,13 +15,9 @@ padding-left: 208px;
 padding-right: 208px;
 }
 
-
-
-
 main{
 height: 60px;
 }
-
 
 #content {
 display: flex;
@@ -93,8 +50,6 @@ font-size: 30px;
 font-style: italic;
 }
 
-
-
 #content2 {
 display: flex;
 border: none;
@@ -123,40 +78,4 @@ h2.comebycar{
 text-align: left;
 font-size: 30px;
 font-style: italic;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-#footer {
-background-color: #252426;
-border: none;
-display: flex;
-padding-left: 208px;
-padding-right: 208px;
-line-height: 0.8;
-padding-top: 20px;
-padding-bottom: 10px;
-
-
-}
-
-#leftfooter {
-border: none;
-width: 50%;
-}
-
-#rightfooter {
-border: none;
-width: 50%;
-text-align: right;
 }
