@@ -79,3 +79,9 @@ h2.comebycar {
   font-size: 30px;
   font-style: italic;
 }
+
+.container {
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
